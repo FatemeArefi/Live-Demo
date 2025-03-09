@@ -1,0 +1,714 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "yekanBakh";
+}
+
+@font-face {
+  font-family: "yekanBakh";
+  src: url("../fonts/fonts/iranyekanwebregular.woff") format("woff");
+}
+
+html,
+body {
+  font-family: "yekanBakh";
+  overflow-x: hidden;
+  width: 100%;
+}
+
+main {
+  font-family: "yekanBakh";
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: auto;
+  padding: 21px 0 7px;
+  background-color: #fff;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+}
+
+.logo {
+  margin: 11px 28px;
+  order: 1;
+}
+
+.header-ul {
+  display: flex;
+  list-style: none;
+  font-family: ;
+}
+
+.header-ul li {
+  font-size: 14px;
+  margin: 0 15px;
+}
+
+.header-ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.header-ul > li:last-child a {
+  color: #fff;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 27px;
+  margin-right: 20px;
+  font-family: "yekanBakh";
+}
+
+.more-menu {
+  display: flex;
+}
+
+.more-menu img {
+  width: 8px;
+  margin-right: 8px;
+}
+
+.hamburger-icon {
+  width: 27px;
+  display: none;
+  order: 3;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  font-family: "yekanBakh";
+  transform: translateY(-100%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburger-menu.show-hamburger-menu {
+  display: flex;
+}
+
+.cross-icon {
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
+}
+
+.cross-icon img {
+  width: 20px;
+  margin-left: 30px;
+}
+
+.hamburger-menu-items {
+  padding: 10px 30px;
+}
+
+.hamburger-menu-items ul {
+  list-style: none;
+}
+
+.hamburger-menu-items a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.hamburger-menu-items div {
+  height: 1px;
+  background-color: #dfe1e4;
+  width: 90%;
+  margin: 8px;
+}
+
+.more-item {
+  display: flex;
+  background-color: #eee;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.more-item img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.more-item a {
+  text-decoration: none;
+  color: #28457b;
+  font-size: 0.85rem;
+}
+
+.show-hamburger-menu {
+  animation: fadeInDown 0.25s forwards;
+}
+
+#show-more-menu {
+  position: relative;
+}
+
+#show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 23px;
+  list-style: none;
+  width: 123px;
+  display: none;
+}
+
+#show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: black;
+}
+
+#show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+
+#show-product-menu {
+  position: relative;
+}
+
+.product-menu {
+  position: absolute;
+  top: 0;
+  left: -135px;
+  background-color: #fff;
+  display: none;
+  justify-content: flex-start;
+  width: 372px;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-top: 5px;
+  margin-top: 23px;
+}
+
+.product-menu a p:first-child {
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.product-menu a p:last-child {
+  color: #000;
+  font-size: 0.7rem;
+}
+
+.product-menu a {
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.banner {
+  width: 1155px;
+  padding: 124px 60px 80px;
+  background-image: linear-gradient(135deg, #7dff68, #7dff68);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-text h3 {
+  font-size: 2.7rem;
+  color: #000;
+  text-align: center;
+  font-weight: 1000px;
+  padding-bottom: 20px;
+}
+.banner-text h3 span {
+  background-color: #fff;
+
+  border-radius: 5px;
+  font-size: 2.75rem;
+  font-weight: 999px;
+}
+
+.banner .p {
+  font-size: 2rem;
+
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.banner-text p {
+  color: #000;
+  text-align: center;
+  font-size: 1.15rem;
+  margin: 25px 0;
+  line-height: 2rem;
+  text-align: right;
+  width: 500px;
+  padding-right: 25px;
+}
+
+.banner-image img {
+  width: 500px;
+}
+
+.banner-button {
+  margin-top: 60px;
+}
+
+.register {
+  font-size: 1.2rem;
+
+  color: #fff;
+  background-color: #000;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  margin-right: 200px;
+}
+
+.call {
+  font-size: 1rem;
+
+  color: #000;
+  border: 2px solid #000;
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.khadamat {
+  font-size: 1.5rem;
+  margin-right: 90px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background-color: #fff;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: calc(25% - 20px);
+  text-align: center;
+}
+
+.service-card img {
+  width: 18%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.service-card .application {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .digital {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .ui {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .seo {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .dev {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .start {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .social {
+  font-size: 15px;
+  color: black;
+  padding-top: 20px;
+}
+.service-card .web {
+  font-size: 15px;
+  color: black;
+  padding-top: 2px;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  background-color: #fff;
+}
+
+.customers-section {
+  padding: 50px 0;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-left: 1200px;
+}
+
+.customers-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  background-color: #f3eded;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.customer-logo {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11%;
+}
+
+.customer-logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.cards-section {
+  padding: 50px 0;
+  text-align: center;
+  /* background-color: #f4f4f4; 
+}
+
+.section-title2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-left: -1200px;
+  margin-top: 10px;
+  border: 1px solid #000;
+  padding: 10px 10px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.section-title3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-left: 1200px;
+  padding: 5px 5px;
+  position: relative;
+  top: -10px;
+  margin-top: -50px;
+}
+.cards-section {
+  padding: 50px 0;
+  text-align: center;
+  /* background-color: #f4f4f4; 
+  margin-top: -70px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+}
+
+
+.faq-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-container {
+  background-color: rgba(230, 237, 230, 0.867);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  height: 350px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-right: 200px;
+}
+
+.h2 span {
+  background-color: #4df72b;
+  padding: 0 5px;
+  border-radius: 5px;
+  display: inline;
+}
+
+
+
+.h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: right;
+  padding-bottom: 2px;
+}
+.custom-card {
+  background-color: #9cf07d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1025px;
+  margin: 20px auto;
+  text-align: center;
+  height: 400px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.card-image {
+  max-width: 10%;
+  height: auto;
+  border-radius: 8px;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.getin {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  float: left;
+  margin-bottom: 15px;
+}
+ن نشد
+بسیار خوب، اجازه دهید کد را دوباره بررسی کنیم و تنظیمات مورد نیاز را اعمال کنیم تا متن‌ها به درستی زیر هم و به صورت راست‌چین نمایش داده شوند.
+
+HTML:
+html
+<section>
+  <div class="custom-card">
+    <h2 class="card-title">با ما در ارتباط باشید</h2>
+    <div class="card-image">
+      <img src="https://noviner.io/assets/static/in-touch.BopjMB1m.svg" alt="تصویر کوچک">
+    </div>
+    <div class="getin">
+      <img src="https://noviner.io/assets/static/colsultation.DkfzSf0s.svg" alt="تصویر بزرگ" class="getin">
+    </div>
+    <div class="text">
+      <p>آیا به دنبال راهی برای ارتقای کسب و کار خود در دنیای دیجیتال هستید؟ ما به شما کمک می کنیم!</p>
+      <p>آیا به دنبال راهی برای ارتقای کسب و کار خود در دنیای دیجیتال هستید؟ ما به شما کمک می کنیم!</p>
+    </div>
+    <div class="button-container">
+      <button class="btn">دکمه اول</button>
+      <button class="btn">دکمه دوم</button>
+    </div>
+  </div>
+</section>
+CSS:
+css
+.custom-card {
+  background-color: #9cf07d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1025px;
+  margin: 20px auto;
+  text-align: center;
+  height: 400px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  text-align: right;
+}
+
+.card-image {
+  max-width: 30%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  float: right;
+  display: flex;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+.getin {
+  width: 60%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 90px;
+  text-align: right;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+}
+
+.text p {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "yekanBakh";
+}
+
+html,
+body {
+  font-family: "yekanBakh";
+  overflow-x: hidden;
+  width: 100%;
+}

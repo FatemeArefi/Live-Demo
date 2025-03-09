@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "yekanBakh";
+  src: url("/src/assets/fonts/fonts/iranyekanwebregular.woff") format("woff");
+}
+
+body {
+  font-family: "yekanBakh", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

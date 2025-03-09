@@ -1,0 +1,156 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #83e96b;
+  margin: 20px;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contact-container h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-container img {
+  margin-bottom: 20px;
+}
+
+.contact-us-text {
+  margin-bottom: 40px;
+}
+
+.contact-us-text p:first-child {
+  margin-bottom: 10px;
+}
+
+.contact-us-button {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-us-register {
+  width: 100%;
+  border-radius: 9px;
+  padding: 10px 0;
+  background-color: #1b1b1b;
+  margin-bottom: 15px;
+}
+
+.contact-us-register a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #fff;
+}
+
+.contact-us-call {
+  width: 100%;
+  border-radius: 9px;
+  padding: 10px 0;
+  border: 1px solid #1b1b1b;
+  margin-bottom: 10px;
+}
+
+.contact-us-call a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+}
+
+.contact-us-image-container img {
+  width: 98%;
+}
+
+.social-contact-us {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .contact-container {
+    margin: 30px auto;
+    width: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 935px;
+    padding: 60px 50px 30px 50px;
+  }
+
+  .contact-us-get-in-touch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-us-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contact-us-register {
+    width: 150px;
+    margin-bottom: 0;
+    padding: 15px;
+  }
+
+  .contact-us-call {
+    width: 150px;
+    margin-bottom: 0;
+    padding: 15px;
+  }
+
+  .social-contact-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .social-contact-us div {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-contact-us img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-us-button-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-container {
+    width: 1120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-container {
+    width: 1320px;
+  }
+}
