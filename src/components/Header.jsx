@@ -1,6 +1,4 @@
 import { useState } from "react";
-import arrowDown from "../assets/images/down-arrow-svgrepo-com.svg";
-
 import "./Header.css";
 
 const Header = () => {
@@ -23,15 +21,11 @@ const Header = () => {
   return (
     <header>
       <div className="hamburger-icon" onClick={toggleMenu}>
-        <img src="/src/assets/images/hamburger.svg" alt="Menu" />
+        <img src="/images/hamburger.svg" alt="Menu" />
       </div>
 
       <div className="logo-container">
-        <img
-          className="logo"
-          src="/src/assets/Your paragraph text.jpg"
-          alt=" logo"
-        />
+        <img className="logo" src="/Your paragraph text.jpg" alt="logo" />
       </div>
 
       <nav className="desktop-nav">
@@ -46,64 +40,65 @@ const Header = () => {
           >
             <a href="#">
               خدمات
-              <img src={arrowDown} alt="Arrow" className="arrow-icon" />
+              <img
+                src="/images/down-arrow-svgrepo-com.svg"
+                alt="Arrow"
+                className="arrow-icon"
+              />
             </a>
             {isServicesOpen && (
               <ul className="dropdown-menu">
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/mob-app.svg" alt="Service 1" />
+                  <img src="/images/mob-app.svg" alt="Service 1" />
                   <div>
                     <h4>طراحی اپلیکیشن</h4>
                     <p>App Design</p>
                   </div>
                 </li>
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/startup.svg" alt="Service 2" />
+                  <img src="/images/startup.svg" alt="Service 2" />
                   <div>
                     <h4>استارت آپ</h4>
                     <p>Startup</p>
                   </div>
                 </li>
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/devops.svg" alt="Service 2" />
+                  <img src="/images/devops.svg" alt="Service 2" />
                   <div>
                     <h4>خدمات دوآپس</h4>
                     <p>DevOps Services</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/web-app.svg" alt="Service 2" />
+                  <img src="/images/web-app.svg" alt="Service 2" />
                   <div>
                     <h4>طراحی وب سایت</h4>
                     <p>Website Design</p>
                   </div>
                 </li>
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/designer.png" alt="Service 2" />
+                  <img src="/images/designer.png" alt="Service 2" />
                   <div>
                     <h4>طراحی رابط کاربری</h4>
                     <p>UI/UX Design</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/d-market.svg" alt="Service 2" />
+                  <img src="/images/d-market.svg" alt="Service 2" />
                   <div>
                     <h4>دیجیتال مارکتینگ</h4>
                     <p>Digital Marketing</p>
                   </div>
                 </li>
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/seo.svg" alt="Service 2" />
+                  <img src="/images/seo.svg" alt="Service 2" />
                   <div>
                     <h4>سئو</h4>
                     <p>SEO</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/social.svg" alt="Service 2" />
+                  <img src="/images/social.svg" alt="Service 2" />
                   <div>
                     <h4>سوشال مدیا</h4>
                     <p>Social Media</p>
@@ -119,45 +114,45 @@ const Header = () => {
           >
             <a href="#">
               محصولات
-              <img src={arrowDown} alt="Arrow" className="arrow-icon" />
+              <img
+                src="/images/down-arrow-svgrepo-com.svg"
+                alt="Arrow"
+                className="arrow-icon"
+              />
             </a>
             {isProductsOpen && (
               <ul className="dropdown-menu">
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/e-shop.svg" alt="Product 1" />{" "}
+                  <img src="/images/e-shop.svg" alt="Product 1" />
                   <div>
                     <h4>فروشگاه آنلاین</h4>
                     <p>Online Shop</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/serv.svg" alt="Product 2" />{" "}
+                  <img src="/images/serv.svg" alt="Product 2" />
                   <div>
                     <h4>سایت خدماتی</h4>
                     <p>Service Site</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/compony.svg" alt="Product 2" />{" "}
+                  <img src="/images/compony.svg" alt="Product 2" />
                   <div>
                     <h4>سایت شرکتی</h4>
-                    <p>Compony Site</p>
+                    <p>Company Site</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/personal.svg" alt="Product 2" />{" "}
+                  <img src="/images/personal.svg" alt="Product 2" />
                   <div>
                     <h4>سایت شخصی</h4>
                     <p>Personal Site</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
                   <img
-                    src="/src/assets/images/desktop-menu-icon-clinic.svg"
+                    src="/images/desktop-menu-icon-clinic.svg"
                     alt="Product 2"
                   />
                   <div>
@@ -165,9 +160,8 @@ const Header = () => {
                     <p>Online Clinic</p>
                   </div>
                 </li>
-
                 <li className="dropdown-content">
-                  <img src="/src/assets/images/lab.svg" alt="Product 2" />
+                  <img src="/images/lab.svg" alt="Product 2" />
                   <div>
                     <h4>آزمایشگاه آنلاین</h4>
                     <p>Online Lab</p>
@@ -180,7 +174,7 @@ const Header = () => {
             <a href="#">بلاگ</a>
           </li>
           <li>
-            <a href="#"> درباره‌ مجموعه</a>
+            <a href="#">درباره‌ مجموعه</a>
           </li>
           <li>
             <a href="#">تماس با ما</a>
@@ -198,8 +192,8 @@ const Header = () => {
         <div className="side-menu-header">
           <img
             className="side-menu-logo"
-            src="/src/assets/Your paragraph text.jpg"
-            alt=" logo"
+            src="/Your paragraph text.jpg"
+            alt="logo"
           />
         </div>
 
@@ -211,37 +205,37 @@ const Header = () => {
           <ul className="side-menu-list">
             <li>
               <a href="#">
-                <img src="/src/assets/images/homeIcon.svg" alt="Home" />
+                <img src="/images/homeIcon.svg" alt="Home" />
                 <span>خانه</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/src/assets/images/services.svg" alt="Services" />
+                <img src="/images/services.svg" alt="Services" />
                 <span>خدمات</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/src/assets/images/products.svg" alt="Products" />
+                <img src="/images/products.svg" alt="Products" />
                 <span>محصولات</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/src/assets/images/blog.svg" alt="Blog" />
+                <img src="/images/blog.svg" alt="Blog" />
                 <span>بلاگ</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/src/assets/images/about.svg" alt="About" />
+                <img src="/images/about.svg" alt="About" />
                 <span>درباره ی مجموعه</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="/src/assets/images/contact.svg" alt="Contact" />
+                <img src="/images/contact.svg" alt="Contact" />
                 <span>اطلاعات تماس</span>
               </a>
             </li>
@@ -249,23 +243,23 @@ const Header = () => {
 
           <div className="email-link">
             <a href="mailto:f.aefi982@gmail.com">
-              <img src="/src/assets/images/email.svg" alt="Email" />
+              <img src="/images/email.svg" alt="Email" />
               <span>f.arefi982@gmail.com</span>
             </a>
           </div>
 
           <div className="social-icons">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/src/assets/images/telegramm.svg" alt="Telegram" />
+              <img src="/images/telegramm.svg" alt="Telegram" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/src/assets/images/instagramm.svg" alt="Instagram" />
+              <img src="/images/instagramm.svg" alt="Instagram" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/src/assets/images/linkdin.svg" alt="LinkedIn" />
+              <img src="/images/linkdin.svg" alt="LinkedIn" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/src/assets/images/whatsapp.svg" alt="WhatsApp" />
+              <img src="/images/whatsapp.svg" alt="WhatsApp" />
             </a>
           </div>
         </div>

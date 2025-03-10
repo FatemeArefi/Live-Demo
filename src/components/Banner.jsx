@@ -28,7 +28,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="banner-image">
-        <img src="/src/assets/images/Hoome.svg" alt="Banner" />
+        <img src="/images/Hoome.svg" alt="Banner" />
       </div>
     </div>
   );

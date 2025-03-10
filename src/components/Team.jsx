@@ -4,52 +4,52 @@ import "./Team.css";
 const Team = () => {
   const teamMembers = [
     {
-      image: "/src/assets/images/CTO.png",
-      name: " Name",
+      image: "/images/CTO.png",
+      name: "Name",
       role: "CTO",
     },
     {
-      image: "/src/assets/images/cmo.jpg",
+      image: "/images/cmo.jpg",
       name: "Name",
       role: "CMO",
     },
     {
-      image: "/src/assets/images/project-manage.jpg",
+      image: "/images/project-manage.jpg",
       name: "Name",
       role: "Project Manager",
     },
     {
-      image: "/src/assets/images/developer.jpg",
+      image: "/images/developer.jpg",
       name: "Name",
       role: "Web Developer",
     },
     {
-      image: "/src/assets/images/developer.jpg",
+      image: "/images/developer.jpg",
       name: "Name",
       role: "Web Developer",
     },
     {
-      image: "/src/assets/images/developer.jpg",
+      image: "/images/developer.jpg",
       name: "Name",
       role: "Web Developer",
     },
     {
-      image: "src/assets/images/mobile-app-developer.jpg",
+      image: "/images/mobile-app-developer.jpg",
       name: "Name",
       role: "Mobile Designer",
     },
     {
-      image: "src/assets/images/designer.png",
+      image: "/images/designer.png",
       name: "Name",
       role: "UI/UX Designer",
     },
     {
-      image: "src/assets/images/digital-marketing.png",
+      image: "/images/digital-marketing.png",
       name: "Name",
       role: "Digital Marketer",
     },
     {
-      image: "src/assets/images/content-marketer.png",
+      image: "/images/content-marketer.png",
       name: "Name",
       role: "Content Marketer",
     },
@@ -75,4 +75,5 @@ const Team = () => {
     </section>
   );
 };
+
 export default Team;

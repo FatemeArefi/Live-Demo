@@ -1,5 +1,4 @@
 import "./Customers.css";
-import myImage from "../assets/images/my-image.jpg/myImage.jpg";
 
 const Customers = () => {
   const customers = [
@@ -8,7 +7,7 @@ const Customers = () => {
     "https://noviner.io/assets/static/customers-irangenepath.gp-l9ft5.webp",
     "https://noviner.io/assets/static/customers-mendel.BiiYb_kq.webp",
     "https://noviner.io/assets/static/customers-superbilit.CNbcjx7Q.webp",
-    myImage,
+    "/images/myImage.jpg",
   ];
 
   return (

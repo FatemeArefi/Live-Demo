@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./FAQ.css";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // state برای ذخیره‌ی index سوال فعال
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
     {
@@ -43,9 +44,17 @@ const FAQ = () => {
             key={index}
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
             onClick={() => handleClick(index)}
+            role="button"
+            aria-expanded={activeIndex === index}
+            aria-controls={`faq-answer-${index}`}
           >
-            <h3>{faq.question}</h3>
-            <p>{faq.answer}</p>
+            <div className="faq-question">
+              <h3>{faq.question}</h3>
+              <span>{activeIndex === index ? <FaMinus /> : <FaPlus />}</span>
+            </div>
+            {activeIndex === index && (
+              <p id={`faq-answer-${index}`}>{faq.answer}</p>
+            )}
           </div>
         ))}
       </div>
