@@ -241,13 +241,6 @@ const Header = () => {
             </li>
           </ul>
 
-          <div className="email-link">
-            <a href="mailto:f.aefi982@gmail.com">
-              <img src="/images/email.svg" alt="Email" />
-              <span>f.arefi982@gmail.com</span>
-            </a>
-          </div>
-
           <div className="social-icons">
             <a href="#" target="_blank" rel="noopener noreferrer">
               <img src="/images/telegramm.svg" alt="Telegram" />
